@@ -1,5 +1,11 @@
+import SwapDetails from "../../components/SwapDetails";
+
 const Home = () => {
-  return <div></div>;
+  return (
+    <>
+      <SwapDetails />
+    </>
+  );
 };
 
 export default Home;

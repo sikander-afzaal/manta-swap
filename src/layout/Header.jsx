@@ -4,7 +4,8 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
   return (
-    <div className="wrapper bg-headerBg h-[90px]">
+    <div className="wrapper relative bg-headerBg isolate h-[90px]">
+      <div className="h-[2px] sm:h-[4px] w-full absolute -z-10 top-full bg-headerBorder left-0"></div>
       {headerToggle && (
         <div onClick={() => setHeaderToggle(false)} className="overlay"></div>
       )}

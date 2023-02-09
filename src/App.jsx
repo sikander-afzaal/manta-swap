@@ -6,9 +6,11 @@ const App = () => {
   return (
     <>
       <Header />
-      <Routes>
-        <Route element={<Home />} path="/" />
-      </Routes>
+      <div className="bg-mainBg min-h-screen pt-8 sm:pt-12 bg-center bg-cover bg-no-repeat flex w-full flex-col justify-start items-center">
+        <Routes>
+          <Route element={<Home />} path="/" />
+        </Routes>
+      </div>
     </>
   );
 };
